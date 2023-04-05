@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BackupDB</string>
+    <string name="db">Вставить точку</string>
+    <string name="dbSave">Прочитать из Excel</string>
+</resources>

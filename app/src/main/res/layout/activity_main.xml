@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/bSaveDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dbSave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <Button
+        android:id="@+id/bReadDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/db"
+        app:layout_constraintEnd_toEndOf="@+id/bSaveDB"
+        app:layout_constraintStart_toStartOf="@+id/bSaveDB"
+        app:layout_constraintTop_toBottomOf="@+id/bSaveDB" />
+
+    <Button
+        android:id="@+id/btDeleteDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Удалить DB"
+        app:layout_constraintEnd_toEndOf="@+id/bReadDB"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="@+id/bReadDB"
+        app:layout_constraintTop_toBottomOf="@+id/bReadDB" />
+
+    <Button
+        android:id="@+id/btInsertDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Експорт в Excel"
+        app:layout_constraintEnd_toEndOf="@+id/btDeleteDB"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="@+id/btDeleteDB"
+        app:layout_constraintTop_toBottomOf="@+id/btDeleteDB" />
+
+    <Button
+        android:id="@+id/openFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="открыть файл"
+        app:layout_constraintBottom_toTopOf="@+id/bSaveDB"
+        app:layout_constraintEnd_toEndOf="@+id/bSaveDB"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/bSaveDB" />
+</androidx.constraintlayout.widget.ConstraintLayout>
